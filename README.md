@@ -33,3 +33,6 @@ Scott Estrada	Developer				scott-estrada-developer.jpg
 Barbara Ramos	Graphic Designer		barbara-ramos-graphic-designer.jpg
 
 ## SVOLGIMENTO
+
+1. Creo un array con all'interno gli oggetti di ogni singolo membro del team;
+2. 

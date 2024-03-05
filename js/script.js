@@ -37,3 +37,7 @@ const ourTeam = [
     img: "assets/img/barbara-ramos-graphic-designer.jpg",
   }
 ];
+
+for(let team of ourTeam){
+  console.log(team);
+}
