@@ -1,43 +1,57 @@
 console.log('js-our-team');
 
+const uscita = document.querySelector('.uscita');
+
 const ourTeam = [
   {
     name: 'Wayne Barnett',
-    postion: 'Founder & CEO',
-    img: "assets/img/wayne-barnett-founder-ceo.jpg",
+    position: 'Founder & CEO',
+    image: "assets/img/wayne-barnett-founder-ceo.jpg",
   },
 
   {
     name: 'Angela Caroll',
-    postion: 'Chief Editor',
-    img: "angela-caroll-chief-editor.jpg",
+    position: 'Chief Editor',
+    image: "assets/img/angela-caroll-chief-editor.jpg",
   },
 
   {
     name: 'Walter Gordon',
-    postion: 'Office Manager',
-    img: "assets/img/walter-gordon-office-manager.jpg",
+    position: 'Office Manager',
+    image: "assets/img/walter-gordon-office-manager.jpg",
   },
 
   {
     name: 'Angela Lopez',
-    postion: 'Social Media Manager',
-    img: "assets/img/angela-lopez-social-media-manager.jpg",
+    position: 'Social Media Manager',
+    image: "assets/img/angela-lopez-social-media-manager.jpg",
   },
 
   {
     name: 'Scott Estrada',
-    postion: 'Developer',
-    img: "assets/img/scott-estrada-developer.jpg",
+    position: 'Developer',
+    image: "assets/img/scott-estrada-developer.jpg",
   },
 
   {
     name: 'Barbara Ramos',
-    postion: 'Graphic Designer',
-    img: "assets/img/barbara-ramos-graphic-designer.jpg",
+    position: 'Graphic Designer',
+    image: "assets/img/barbara-ramos-graphic-designer.jpg",
   }
 ];
 
 for(let team of ourTeam){
   console.log(team);
+
+  uscita.innerHTML += `
+  <div class="col">
+    <div class="card">
+      <img src="${team.image}" class="card-img-top" alt="${team.image}">
+      <div class="card-body">
+        <h5 class="card-title">${team.name}</h5>
+        <p class="card-text">${team.position}</p>
+      </div>
+    </div>
+  </div>
+  `
 }
